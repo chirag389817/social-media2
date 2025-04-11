@@ -70,7 +70,7 @@ updated = updated.filter(function(item) {
 }
 
   return (
-    <div style={{backgroundColor : "#fafafa "}}>
+    <div style={{backgroundColor : "#F3F0EA "}}>
 {/*---------------------------------------------------------navbar----------------------------------------------------------*/}
     <NavBar/>
 
@@ -81,17 +81,21 @@ updated = updated.filter(function(item) {
                 <div className="left  col-lg-7 col-sm-12  col-sm-12  h-100  border_radius mt-5" >
              <Post onAdd1={Addone}/>
                {isnew?<MoonLoader
-  color="#077ce8"
+  color="#f57c00"
   cssOverride={{}}
   loading
   size={60}
   
 />:null}
-             {posts.map((post,idx)=>{
-               return (
-             <Posts updatePosts={updata} key={idx} post={post}/>
-               )
-             })}
+             {/* {posts.map((post,idx)=>{
+               return ( */}
+              {/* <Posts updatePosts={updata} key={idx} post={post}/> */}
+            {Array.isArray(posts) && posts.map((post, idx) => {
+              return (
+                <Posts updatePosts={updata} key={idx} post={post} />
+              )
+            })}
+             
           </div>
              <FindPeople/>
             </div>

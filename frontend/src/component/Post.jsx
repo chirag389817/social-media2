@@ -9,7 +9,7 @@ import PulseLoader from "react-spinners/PulseLoader";
 import BarLoader from "react-spinners/PulseLoader";
 import axios from 'axios';
 import { useReducer } from 'react';
-
+import "./Post.css"
 const Post = (props1) => {
 
   const [Text, setText] = useState('');
@@ -96,7 +96,7 @@ const PostData = {
     
 
   return (
-    <section className="post border_radius border-info border_radius white overflow-hidden pb-4 border position-relative">
+    <section className="myborder white overflow-hidden pb-4 position-relative">
   <div className="d-flex align-items-center p-3 ps-4  mb-0">
   </div>
   <div className="">
@@ -112,7 +112,7 @@ const PostData = {
           className="outline w-75 "
           placeholder={"Share your thoughts "+user.name}
         />
-        <button  onClick={submitHandler} className="btn btn-primary btn-md ms-4 px-4 b-post">
+        <button  onClick={submitHandler} className="btn btn-blue btn-md ms-4 px-4 ">
           Post
         </button>
         <PulseLoader  loading={picLoading} size={15} />

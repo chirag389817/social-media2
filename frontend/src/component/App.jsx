@@ -19,7 +19,7 @@ import { HashRouter } from 'react-router-dom'
 const App = () => {
   
   return (
-    <>
+    <div class="body" >
    <ToastContainer />
     <BrowserRouter>
       <Routes>
@@ -43,7 +43,7 @@ const App = () => {
       </Routes>
     </BrowserRouter>
 
-    </>
+    </div>
   );
 }
 

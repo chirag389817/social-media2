@@ -21,6 +21,8 @@
     "jquery": "^3.6.1",
     "jwt-decode": "^3.1.2",
     "keeper": "file:",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",

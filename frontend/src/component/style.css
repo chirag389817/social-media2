@@ -8,19 +8,24 @@
 }
 
 .search{
-    background-color: #EAEBF0;
+    background-color: #F3F0EA;
     outline: none;
     border: none;
 }
 
 body{
-    background-color: #ffffff;
+    background-color:  #F3F0EA;
+    font-family: 'Lato', sans-serif;
+
+}
+.body{
+    background-color: #F3F0EA;
     font-family: 'Lato', sans-serif;
 
 }
 
 nav{
-    background-color: white;
+    background-color: #F3F0EA;
 }
 
 .border_radius{
@@ -60,11 +65,11 @@ nav{
 }
 
 .color{
-    background-color: #1f79ff;
+    background-color: #f57c00;
 }
 
 .blue:hover{
-    color: #1f79ff;
+    color: #f57c00;
     cursor: pointer;
 }
 
@@ -92,9 +97,9 @@ nav{
 }
 
 .button_save:hover{
-    background-color: #1f79ff;
+    background-color: #f57c00;
     color: white;
-    border:#1f79ff 2px solid ;
+    border:white 2px solid ;
 }
 
 .search_icon{
@@ -181,3 +186,25 @@ nav{
     z-index: 1000;
 }
 
+.random{
+    color: #077ce8;
+    cursor: pointer;
+}
+
+.btn-orange2 {
+    background-color: #f57c00;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(245, 124, 0, 0.4);
+  }
+  
+  .btn-orange2:hover {
+    color:#f57c00;
+    opacity: 0.9;
+    transform: scale(1.05);
+  }

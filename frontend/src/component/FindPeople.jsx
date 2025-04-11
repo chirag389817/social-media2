@@ -7,7 +7,7 @@ import { useState } from 'react'
 import { follow } from '../api/api-post'
 import { useNavigate } from 'react-router'
 import {toast} from 'react-toastify';
-
+import "./Post.css"
 const FindPeople = () => {
     const nav = useNavigate()
     const abortController = new AbortController()
@@ -65,9 +65,9 @@ const clickFollow = (user, index) => {
 
   return (
     <>
-<div className="right col-lg-4 d-lg-block d-sm-none d-none border rounded border-info border_radius d-flex flex-column  p-3 mt-3 white border mt-5 ">
+<div className="right col-lg-4 d-lg-block d-sm-none d-none myborder  d-flex flex-column  p-3 mt-3 white  mt-5 ">
   <div>
-                    <p class="fw-bold fs-5">Suggestions for you</p>
+      <p class="fw-bold fs-5">Suggestions for you</p>
   </div>
   <hr />
   <div className="max_height overflow-auto">

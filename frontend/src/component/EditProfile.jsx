@@ -100,7 +100,7 @@ const ImageHander=(pics)=>
    
   {/*-------------------------------------------------------------- body -------------------------------------------------------------*/}
  
-  <div className="d-flex flex-column py-5 align-items-center mt-5">
+  <div className="d-flex flex-column py-5 align-items-center mt-5 h-100vh">
     <div className="d-flex flex-column align-items-center flex-lg-row align-items-lg-start m-auto">
       <div className="position-relative">
         <img

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from "react-router-dom";
 import PulseLoader from "react-spinners/PulseLoader";
-
+import "./Register.css"
 
 const Login = ({history}) => {
   let [loading, setLoading] = useState(false);
@@ -28,7 +28,7 @@ const handleClick = async (event) => {
       event.preventDefault();
     setLoading(true)
     if (!data.email || !data.password) {
-      toast.warning('Please Fill all the Feilds',{position: toast.POSITION.TOP_LEFT})
+      toast.warning('All the Fields are Required ! ',{position: toast.POSITION.TOP_LEFT})
       return;
     }
 
@@ -76,38 +76,34 @@ function handleChange(event)
   }
 
   return (
-<div class="container mt-5">
-  <h1>Login</h1>
-  <PulseLoader  color={color} loading={loading} size={15} />
-  <div class="row">
+<div class="container1">
+<img src="/images/Connekt.png" alt="Connekt Logo" className=" logo-imgreg" />
+  <h3>LOGIN</h3>
+  <PulseLoader color={color} loading={loading} size={15} />
+  <div class="row w-100 justify-content-center mt-4">
     <div class="col-sm-8">
       <div class="card">
         <div class="card-body">
           <form action="/login" method="POST">
             <div class="form-group">
               <label for="email">Email</label>
-              <input onChange={handleChange} type="email" class="form-control" name="email"/>
+              <input onChange={handleChange} type="email" class="form-control" name="email" />
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input onChange={handleChange}  type="password" class="form-control" name="password"/>
-              <p>
-        <Link to="/register">Don't Have an acount Register</Link>
-      </p>
+              <input onChange={handleChange} type="password" class="form-control" name="password" />
+              <p class="mt-2">
+                <Link to="/register">Don't have an account? Register</Link>
+              </p>
             </div>
-            <button onClick={handleClick} class="btn btn-dark">Login</button>
+            <button onClick={handleClick} class="btn btn-dark w-100">Login</button>
           </form>
-
         </div>
       </div>
     </div>
-
-    <div class="col-sm-4">
-      
-    </div>
-
   </div>
 </div>
+
   )
 }
 export default Login

@@ -10,7 +10,7 @@ import { read } from '../api/api-post';
 import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
-
+import "./Post.css"
 import { useNavigate } from 'react-router'
 
 
@@ -119,7 +119,7 @@ const handleKeyDown = (event) => {
   }
   return (
     <div>
-  <section className="posts border border_radius border-secondary mt-3  overflow-hidden p-0 white border position-relative">
+  <section className="myborder mt-3  overflow-hidden p-0 white  position-relative">
         {props.post.userDetails.id==user1.id ? <i className="fa-regular fa-trash-can position-absolute pt-4 fs-5 trash" onClick={deletePost}/>:null}
 
   <div className="name d-flex pl-3 pt-3">

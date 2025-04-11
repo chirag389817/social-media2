@@ -14,13 +14,19 @@
 }
 
 body{
-    background-color: #fafafa;
+    background-color: #F3F0EA;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.body{
+    background-color: #F3F0EA;
     font-family: 'Lato', sans-serif;
 
 }
 
 nav{
-    background-color: white;
+    background-color: #F3F0EA;
 }
 
 .border_radius{

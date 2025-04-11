@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from "react-router-dom";
 import { useEffect } from 'react';
 import { useState } from 'react';
-
+import "./Navbar.css"
 import auth from './../auth/auth-help'
 import jwt1 from 'jwt-decode' // import dependency
 import { read } from '../api/api-post';
@@ -101,11 +101,12 @@ useEffect(() => {
 
 
   return (
-    <div>
-    <nav className="py-2 position-fixed top-0 pr-4 start-0 w-100 shadow-sm">
-  <div className="container d-flex justify-content-between align-items-center w-100 bg-white">
+    <div class="navbarcontainer">
+    <nav className="py-2 position-fixed top-0 pr-4 start-0 w-100 shadow-sm navbarcontainer">
+  <div className="container d-flex justify-content-between align-items-center navbarcontainer">
     <a style={{ textDecoration: "none", color: "black" }}>
-      <h1 onClick={()=>{nav('/')}}  className="logo fs-3 fw-bold">Piqosocial</h1>
+      {/* <h1 onClick={()=>{nav('/')}}  className="logo fs-3 fw-bold">Piqosocial</h1> */}
+      <img src="/images/Connekt.png" alt="Connekt Logo" onClick={()=>{nav('/')}}  className=" logo-img rounded" />
     </a>
     <div className="mr-5 position-relative d-flex">
       <Stack sx={{ width: 100}}> 
